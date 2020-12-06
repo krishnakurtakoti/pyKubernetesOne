@@ -1,0 +1,29 @@
+k@krishna-Lenovo-G50-70:~/pyKubeOne$ git config --global user.name "krishnagk"
+k@krishna-Lenovo-G50-70:~/pyKubeOne$ git config --global user.email "krishnakurtakoti56@gmail.com"
+k@krishna-Lenovo-G50-70:~/pyKubeOne$ git config --global --list
+user.email=krishnakurtakoti56@gmail.com
+user.name=krishnagk
+k@krishna-Lenovo-G50-70:~/pyKubeOne$ git init
+Initialized empty Git repository in /home/k/pyKubeOne/.git/
+k@krishna-Lenovo-G50-70:~/pyKubeOne$ git remote add origin https://gitlab.com/krishnagk/pykubeone.git
+k@krishna-Lenovo-G50-70:~/pyKubeOne$ git add .
+k@krishna-Lenovo-G50-70:~/pyKubeOne$ git commit -m "Initial commit"
+[master (root-commit) 1897182] Initial commit
+ 6 files changed, 78 insertions(+)
+ create mode 100644 Dockerfile
+ create mode 100644 app.py
+ create mode 100644 deployment.yml
+ create mode 100644 minikube-ingress.yml
+ create mode 100644 requirements.txt
+ create mode 100644 service.yml
+k@krishna-Lenovo-G50-70:~/pyKubeOne$ git push -u origin master
+Username for 'https://gitlab.com': krishnagk
+Password for 'https://krishnagk@gitlab.com': 
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.28 KiB | 0 bytes/s, done.
+Total 8 (delta 0), reused 0 (delta 0)
+To https://gitlab.com/krishnagk/pykubeone.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
