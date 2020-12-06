@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: py-kube-one-image
+  name: py-kube-one-image
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: py-kube-one-image
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: py-kube-one-image
+    spec:
+      containers:
+      - image: py-kube-one-image:latest
+        name: py-kube-one-image
+        imagePullPolicy: Never
+        resources: {}
+        ports:
+          - containerPort: 3000
+status: {}
+
